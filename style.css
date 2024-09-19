@@ -4,13 +4,42 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
-  body{
-    height: 100%;
-    font-family: sans-serif;
-    background: #000000;
-    #credits {position: fixed; bottom: 10px; right: 10px; color: black; font-size: 12px; font-family: Arial, sans-serif;}
+
+  .letras{
+    color: #68f801;
   }
+  
+  body {
+    margin: 0; /* Elimina márgenes predeterminados del body */
+    padding: 0;
+    background-image: url('image/fon3.jpg'); /* Cambia esta ruta por la ubicación de tu imagen */
+    background-size: cover; /* Hace que la imagen cubra todo el fondo de la página */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Hace que el body tenga al menos el tamaño de la ventana */
+}
+.titulo{
+  color: #000000;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 
+                2px 2px 0 #f50202,  
+                -2px -2px 0 #f50202,
+                2px -2px 0 #f50202,
+                -2px 2px 0 #01128f;
+  animation: parpadear 2s step-start infinite;
+}
+  @keyframes parpadear {
+    0%, 100% {
+        opacity: 1; /* Totalmente visible */
+    }
+    50% {
+        opacity: 0; /* Totalmente invisible */
+    }
+
+}
   
   .container{
     align-items: flex-start;
